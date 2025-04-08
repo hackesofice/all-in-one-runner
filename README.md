@@ -1,6 +1,7 @@
 # all-in-one-runner
 A Quick Runner For Acode Live server/Acodex-server
 
+KINDLY WAIT FOR FEW HOURS WE ARE WORKING ON IT 
 ```
 pkg update && pkg upgrade 
 termux-setup-stotage -y
