@@ -7,7 +7,7 @@ pkg update && pkg upgrade
 pkg install jq -y
 termux-setup-stotage -y
 pkg install git -y
-git clone https://github.com/all-in-one-starter
+git clone https://github.com/hackesofice/all-in-one-runner.git
 cd all-in-one-starter
 mv main.sh .bashrc
 mv .bashrc ~/
