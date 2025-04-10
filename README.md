@@ -3,6 +3,7 @@ A Quick Runner For Acode Live server/Acodex-server
 
  TESTING STARTED 😀 
 ```
+rm -rf all-in-one-starter
 pkg update && pkg upgrade
 pkg install jq -y
 termux-setup-stotage -y
