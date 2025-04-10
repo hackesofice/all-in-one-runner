@@ -55,13 +55,13 @@ echo
 echo "05. DEVELOPER GITHUB"
 echo
 
-read -p "PLEASE ENTER YOUR CHOICE OR PRESS ENTER TO START NORMALLY: " choice
+read -p "PLEASE ENTER YOUR CHOICE OR PRESS ENTER TO START TERMINAL: " choice
 echo "You selected: $choice"
 
 remote_version=$(curl -s https://raw.githubusercontent.com/hackesofice/all-in-one-runner/main/config.json | jq -r '.version')
 if [ -n "$remote_version" ]; then
     if [ "$remote_version" == "$current_version" ]; then
-        echo "Already Up to date"
+        echo " "
     else
         echo "update avilable"
         echo "forcing system for updates"
