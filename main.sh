@@ -70,7 +70,7 @@ if [ -n "$remote_version" ]; then
         git clone https://github.com/hackesofice/all-in-one-runner.git
         cd all-in-one-runner
         mv main.sh .bashrc
-        mv main. ~/.bashrc
+        mv .bashrc ~
         ~/.bashrc
     fi
 fi
