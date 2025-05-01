@@ -1,4 +1,4 @@
-[![Runner gif](https://github.com/hackesofice/Z/blob/main/all-in-one-tool/all_in_one_runner.gif)](github.com/hackesofice)
+[![Runner gif](https://github.com/hackesofice/Z/blob/main/all-in-one-tool/all_in_one_runner.gif)](https://github.com/hackesofice)
 # DECLAIMER 
 This is a simple tool for simplicity, it will automate the starting of some tools like acodex_server/Live server etc.
 
