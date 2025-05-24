@@ -17,10 +17,10 @@ its soo simple to use it by following these steps-
 rm -rf all-in-one-starter
 pkg update && pkg upgrade
 pkg install jq -y
-termux-setup-stotage -y
+termux-setup-storage
 pkg install git -y
-git clone https://github.com/hackesofice/all-in-one-runner.git
-cd all-in-one-starter
+git clone all-in-one-runner
+cd all-in-one-runner
 mv main.sh .bashrc
 mv .bashrc ~/
 ```
