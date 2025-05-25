@@ -14,12 +14,12 @@ its soo simple to use it by following these steps-
 `step 3.` Copy the given command below and paste them on termux at once and hit enter
 
 ```
-rm -rf all-in-one-starter
+rm -rf all-in-one-runner
 pkg update && pkg upgrade
 pkg install jq -y
 termux-setup-storage
 pkg install git -y
-git clone all-in-one-runner
+git clone https://github.com/hackesofice/all-in-one-runner.git
 cd all-in-one-runner
 mv main.sh .bashrc
 mv .bashrc ~/
