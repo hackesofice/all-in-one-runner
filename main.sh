@@ -1,6 +1,6 @@
 #!/bin/bash
 
-current_version="1.0.0"
+current_version="2.0.0"
 clear
 
 COLS=$(stty size | cut -d ' ' -f2)
@@ -84,11 +84,27 @@ if [ "$choice" == "1" ] || [ "$choice" == "01" ]; then
             curl -L https://raw.githubusercontent.com/bajrangCoder/acodex_server/main/install.sh | bash
             clear
             echo -e "$logoAXS"
+            echo $$ > ~/.axsPID
             axs
         else
             clear
-            echo -e "$logoAXS"
-            axs
+            if [ -s ~/.axsPID ]; then
+                pid=$(cat ~/.axsPID)
+                echo "OLD AXS SESSION FOUND CLOSING THAT SESSION"
+                sleep 2
+                kill -9 -$pid
+                clear
+                echo -e "$logoAXS"
+                echo $$ > ~/.axsPID
+                axs
+            else
+                echo "NO AXS SESSIONS DETECTED STARTING IT SAFELY"
+                sleep 2
+                clear
+                echo -e "$logoAXS"
+                echo $$ > ~/.axsPID
+                axs
+            fi
         fi
 
     else
@@ -98,7 +114,7 @@ if [ "$choice" == "1" ] || [ "$choice" == "01" ]; then
         curl -L https://raw.githubusercontent.com/bajrangCoder/acodex_server/main/install.sh | bash
         clear
         echo -e "$logoAXS"
-        axs
+        echo $$ > ~/.axsPID                                                                                                                                     axs
     fi
 
 elif [ "$choice" == "2" ] || [ "$choice" == "02" ]; then
