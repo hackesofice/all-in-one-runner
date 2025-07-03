@@ -71,7 +71,7 @@ if [ -n "$remote_version" ]; then
         cd all-in-one-runner
         mv main.sh .bashrc
         mv .bashrc ~
-        ~/.bashrc
+        echo "UPDATES SUCESS RESTART THE TERMUX OR CREATE A NEW TERMINAL TO USE THE UPDATES"
     fi
 fi
 
