@@ -22,7 +22,7 @@ pkg install git -y
 git clone https://github.com/hackesofice/all-in-one-runner.git
 cd all-in-one-runner
 mv main.sh .bashrc
-mv .bashrc ~/
+mv .bashrc ~/ && clear
 ```
 
 > [!note]
